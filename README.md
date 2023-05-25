@@ -16,6 +16,7 @@
 
 - https://emeritus.org/blog/coding-rust-programming-language/
 
+
 ### **HOW-to’s ** (what we will be using)
 
 - https://rust-book.cs.brown.edu 
@@ -32,7 +33,8 @@
 
 - https://www.cargo-lambda.info/guide/what-is-cargo-lambda.html 
 
-**Resources: **
+
+### **Resources: **
 
 - https://rustup.rs 
 
@@ -59,7 +61,8 @@
 
 - https://github.com/starship/starship 
 
-**Github projects - samples / examples**
+
+### **Github projects - samples / examples**
 
 - https://github.com/lapce/lapce 
 
