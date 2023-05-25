@@ -1,6 +1,6 @@
-Rust Syllabus . . . ish
+# Rust Syllabus . . . ish
 
-**WHY???**
+### **WHY???**
 
 - https://stackoverflow.blog/2023/01/26/comparing-tag-trends-with-our-most-loved-programming-languages/ 
 
@@ -16,7 +16,7 @@ Rust Syllabus . . . ish
 
 - https://emeritus.org/blog/coding-rust-programming-language/
 
-- **HOW-to’s ** (what we will be using)
+### **HOW-to’s ** (what we will be using)
 
 - https://rust-book.cs.brown.edu 
 
