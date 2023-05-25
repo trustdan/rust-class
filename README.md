@@ -1,88 +1,91 @@
-# Rust Syllabus . . . ish
+Rust Syllabus . . . ish
 
-Articles 
+**WHY???**
 
-https://stackoverflow.blog/2023/01/26/comparing-tag-trends-with-our-most-loved-programming-languages/ 
+- https://stackoverflow.blog/2023/01/26/comparing-tag-trends-with-our-most-loved-programming-languages/ 
 
-https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/ 
+- https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/ 
 
-https://www.techrepublic.com/article/rust-not-firefox-is-mozillas-greatest-industry-contribution/
+- https://www.techrepublic.com/article/rust-not-firefox-is-mozillas-greatest-industry-contribution/
 
-https://aws.amazon.com/blogs/opensource/why-aws-loves-rust-and-how-wed-like-to-help/
+- https://aws.amazon.com/blogs/opensource/why-aws-loves-rust-and-how-wed-like-to-help/
 
-https://www.nature.com/articles/d41586-020-03382-2 
+- https://www.nature.com/articles/d41586-020-03382-2 
 
-https://www.rerun.io/blog/why-rust 
+- https://www.rerun.io/blog/why-rust 
 
-https://emeritus.org/blog/coding-rust-programming-language/
+- https://emeritus.org/blog/coding-rust-programming-language/
 
-How-to’s 
+- **HOW-to’s ** (what we will be using)
 
-https://rust-book.cs.brown.edu 
+- https://rust-book.cs.brown.edu 
 
-https://github.com/rust-lang/rustlings 
+- https://github.com/rust-lang/rustlings 
 
-https://github.com/crazymykl/rust-koans 
+- https://github.com/crazymykl/rust-koans 
 
-https://github.com/dtolnay/rust-quiz 
+- https://github.com/dtolnay/rust-quiz 
 
-https://github.com/exercism/rust 
+- https://github.com/exercism/rust 
 
-https://github.com/rust-unofficial/too-many-lists 
+- https://github.com/rust-unofficial/too-many-lists 
 
-https://www.cargo-lambda.info/guide/what-is-cargo-lambda.html 
+- https://www.cargo-lambda.info/guide/what-is-cargo-lambda.html 
 
-Resources: 
+**Resources: **
 
-https://rustup.rs 
+- https://rustup.rs 
 
-https://github.com/rust-lang/rustup 
+- https://github.com/rust-lang/rustup 
 
-https://doc.rust-lang.org/book/ 
+- https://doc.rust-lang.org/book/ 
 
-https://github.com/rust-unofficial/awesome-rust 
+- https://github.com/rust-unofficial/awesome-rust 
 
-https://github.com/ralfbiedert/cheats.rs 
+- https://github.com/ralfbiedert/cheats.rs 
 
-https://github.com/upsuper/rust-cheatsheet 
+- https://github.com/upsuper/rust-cheatsheet 
 
-https://www.rust-lang.org 
+- https://www.rust-lang.org 
 
-Favorites / everyday uses: 
-https://github.com/lsd-rs/lsd 
 
-https://github.com/ajeetdsouza/zoxide 
+**My favorites and everyday use Rust programs: **
 
-https://www.getzola.org 
+- https://github.com/lsd-rs/lsd 
 
-https://github.com/starship/starship 
+- https://github.com/ajeetdsouza/zoxide 
 
-Github projects
+- https://www.getzola.org 
 
-https://github.com/lapce/lapce 
+- https://github.com/starship/starship 
 
-https://www.cargo-lambda.info
+**Github projects - samples / examples**
 
-https://github.com/cargo-lambda/cargo-lambda 
+- https://github.com/lapce/lapce 
 
-https://github.com/awslabs/aws-lambda-rust-runtime 
+- https://www.cargo-lambda.info
 
-https://github.com/pola-rs/polars 
+- https://github.com/cargo-lambda/cargo-lambda 
 
-https://github.com/kykosic/resume-as-code 
+- https://github.com/awslabs/aws-lambda-rust-runtime 
 
-https://github.com/maitesin/rust-cv 
+- https://github.com/pola-rs/polars 
 
-https://github.com/fathyb/carbonyl 
+- https://github.com/kykosic/resume-as-code 
 
-https://github.com/rust-headless-chrome/rust-headless-chrome 
+- https://github.com/maitesin/rust-cv 
 
-https://github.com/actix/actix-web 
+- https://github.com/fathyb/carbonyl 
 
-https://github.com/helix-editor/helix
+- https://github.com/rust-headless-chrome/rust-headless-chrome 
 
-https://github.com/sonnylazuardi/chat-ai-desktop 
+- https://github.com/actix/actix-web 
 
-https://github.com/sigoden/aichat 
+- https://github.com/helix-editor/helix
 
-https://github.com/mathall/rim 
+- https://github.com/sonnylazuardi/chat-ai-desktop 
+
+- https://github.com/sigoden/aichat 
+
+- https://github.com/mathall/rim 
+
