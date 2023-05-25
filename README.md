@@ -1,6 +1,6 @@
 # Rust Syllabus . . . ish
 
-### **WHY???**
+### WHY???
 
 - https://stackoverflow.blog/2023/01/26/comparing-tag-trends-with-our-most-loved-programming-languages/ 
 
@@ -17,7 +17,7 @@
 - https://emeritus.org/blog/coding-rust-programming-language/
 
 
-### **HOW-to’s ** (what we will be using)
+### HOW-to’s (what we will be using)
 
 - https://rust-book.cs.brown.edu 
 
@@ -34,7 +34,7 @@
 - https://www.cargo-lambda.info/guide/what-is-cargo-lambda.html 
 
 
-### **Resources: **
+### **Resources:**
 
 - https://rustup.rs 
 
@@ -51,7 +51,7 @@
 - https://www.rust-lang.org 
 
 
-### **My favorites and everyday use Rust programs:**
+### My favorites and everyday use Rust programs:
 
 - https://github.com/lsd-rs/lsd 
 
@@ -62,7 +62,7 @@
 - https://github.com/starship/starship 
 
 
-### **Github projects - samples / examples**
+### Github projects - samples / examples
 
 - https://github.com/lapce/lapce 
 
