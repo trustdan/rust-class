@@ -1,4 +1,4 @@
-# Syllabus . . . ish
+# Rust Syllabus . . . ish
 
 Articles 
 
