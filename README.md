@@ -51,7 +51,7 @@
 - https://www.rust-lang.org 
 
 
-**My favorites and everyday use Rust programs: **
+### **My favorites and everyday use Rust programs:**
 
 - https://github.com/lsd-rs/lsd 
 
