@@ -1,3 +1,31 @@
+subj: Rust with Rust
+
+North Spark will be hosting coding class again!
+
+Who: You!  You crazy rustaceans! 🦀
+What: The Rust language (rust lang).
+Where:  North Spark Defense Lab, 641 Alert Ave, Grand Forks AFB, ND 58205.
+When: Wednesdays at 1500L, starting 31 MAY after Memorial Day.
+Why?  It's the most popular programming language for years running.  It "just works" and is secure. A programming unicorn, Rust is both a systems-level and high-level language.  It is great for data science and it plays nice with Python (see "Polars"). 
+How?  YOU!  Through "Rustlings," "Rust Koans," "Exercism," and similarly thoughtful teach-yourself methods. 
+How else?  Teamwork, O'Reilly Learning, Digital U, Youtube, etc. 
+
+Dan
+       _~^~^~_
+   \) /  o o  \ (/
+     '_   u   _'
+     \ '-----' /
+It is dangerous to go alone, take this:
+      /| ________________
+O|===|* >________________>
+      \|
+
+"How small a thought it takes to fill a whole life"
+           \  /
+------------()------------
+
+
+
 # Rust Syllabus . . . ish
 
 ### WHY???
