@@ -51,6 +51,17 @@
 - https://www.rust-lang.org 
 
 
+### O'Reilly playlists (free through Mil OneSource:
+
+- https://learning.oreilly.com/playlists/7f99eab1-6a70-4639-a06b-82bd5af787b4/
+
+- https://learning.oreilly.com/playlists/a85a83b4-f90b-43cb-854a-c12bbcc074b2/
+
+- https://learning.oreilly.com/playlists/5e270f65-80a8-42cf-8b7c-47821f731997/
+
+- https://learning.oreilly.com/playlists/095f4455-b702-44ed-a7c9-11e7e7a27634/
+
+
 ### My favorites and everyday use Rust programs:
 
 - https://github.com/lsd-rs/lsd 
