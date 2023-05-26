@@ -1,5 +1,5 @@
 subj: Rust with Rust
-
+```
 North Spark will be hosting coding class again!
 ```
 Who: You!  You crazy rustaceans! 🦀
@@ -15,7 +15,7 @@ Why?  It's the most popular programming language for years running.  It "just wo
 How?  YOU!  Through "Rustlings," "Rust Koans," "Exercism," and similarly thoughtful teach-yourself methods. 
 ```
 How else?  Teamwork, O'Reilly Learning, Digital U, Youtube, etc. 
-```
+
 Dan
 ```
        _~^~^~_
