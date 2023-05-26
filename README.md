@@ -29,8 +29,6 @@ O|===|* >________________>
 --------------------------------------------()--------------------------------------------
 ```
 
-![alt text](https://github.com/trustdan/north/blob/main/Rust-Programming-w-Nor-Spark.png) 
-
 # Rust Syllabus . . . ish
 
 ### WHY???
@@ -136,3 +134,5 @@ O|===|* >________________>
 
 - https://github.com/mathall/rim 
 
+
+![alt text](https://github.com/trustdan/north/blob/main/Rust-Programming-w-Nor-Spark.png) 
