@@ -29,7 +29,7 @@ O|===|* >________________>
 --------------------------------------------()--------------------------------------------
 ```
 
-![alt text](https://github.com/trustdan/north/blob/main/Rust-Programming-w-Nor-Spark.tiff)
+![alt text](https://github.com/trustdan/north/blob/main/Rust-Programming-w-Nor-Spark.png)
 
 # Rust Syllabus . . . ish
 
