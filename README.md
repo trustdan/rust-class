@@ -11,9 +11,14 @@ How?  YOU!  Through "Rustlings," "Rust Koans," "Exercism," and similarly thought
 How else?  Teamwork, O'Reilly Learning, Digital U, Youtube, etc. 
 
 Dan
+       
        _~^~^~_
+       
+   
    \) /  o o  \ (/
+   
      '_   u   _'
+     
      \ '-----' /
 It is dangerous to go alone, take this:
       /| ________________
