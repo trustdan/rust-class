@@ -51,7 +51,7 @@
 - https://www.rust-lang.org 
 
 
-### O'Reilly playlists (free through Mil OneSource:
+### O'Reilly playlists (free through Mil OneSource):
 
 - https://learning.oreilly.com/playlists/7f99eab1-6a70-4639-a06b-82bd5af787b4/
 
