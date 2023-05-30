@@ -1,6 +1,6 @@
 subj: Rust with Rust
 ```
-North Spark will be hosting coding class again!
+North Spark will be hosting coding class again! No experience necessary. 
 ```
 Who: You!  You crazy rustaceans! 🦀
 ```
