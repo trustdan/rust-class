@@ -2,37 +2,55 @@ SSH Setup for PowerShell (Windows):
 
 markdown
 
----
-title: SSH Setup for GitHub on PowerShell (Windows)
----
-
 # SSH Setup for GitHub on PowerShell (Windows)
 
 ## 1. Check for Existing SSH Keys
 
+Before you add a new SSH key to your GitHub account, you should check whether you have any existing SSH keys. 
+
+Open PowerShell and run:
 ```powershell
 Get-ChildItem -Path ~/.ssh/
 
+If you see a file named id_rsa.pub, you already have an SSH key.
 2. Generate a New SSH Key
+
+If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
 
 powershell
 
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
+Replace your_email@example.com with the email address you used to sign up for GitHub.
+
+When you're prompted to "Enter a file in which to save the key," press Enter to accept the default location.
 3. Add the SSH Key to the ssh-agent
+
+Ensure the ssh-agent is running:
 
 powershell
 
 Start-Service -Name ssh-agent
+
+Add your SSH private key to the ssh-agent:
+
+powershell
+
 ssh-add ~/.ssh/id_ed25519
 
+If you created your key with a different name, or if you're using a legacy key, the path to the key will be different.
 4. Add the SSH Key to Your GitHub Account
+
+Copy the SSH key to your clipboard:
 
 powershell
 
 Get-Content ~/.ssh/id_ed25519.pub | clip
 
+Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
 5. Test the SSH Key
+
+To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
 
 powershell
 
@@ -40,45 +58,67 @@ ssh -T git@github.com
 
 6. Use SSH URLs for Git Repositories
 
-Finally, when you're cloning Git repositories (like the course repository), use the SSH URL: git@github.com:username/repo.git
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL, which looks like git@github.com:username/repo.git.
 
-yaml
+bash
 
 
-**SSH Setup for Debian / Fedora Linux:**
+### SSH Setup for Debian / Fedora Linux:
 
 ```markdown
----
-title: SSH Setup for GitHub on Debian / Fedora Linux
----
-
 # SSH Setup for GitHub on Debian / Fedora Linux
 
 ## 1. Check for Existing SSH Keys
 
+Before you add a new SSH key to your GitHub account, you should check whether you have any existing SSH keys. 
+
+Open a terminal and run:
 ```bash
 ls -al ~/.ssh
 
+If you see a file named id_rsa.pub, you already have an SSH key.
 2. Generate a New SSH Key
+
+If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
 
 bash
 
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
+Replace your_email@example.com with the email address you used to sign up for GitHub.
+
+When you're prompted to "Enter a file in which to save the key," press Enter to accept the default location.
 3. Add the SSH Key to the ssh-agent
+
+Ensure the ssh-agent is running:
 
 bash
 
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
 
-4. Add the SSH Key to Your GitHub Account
+Add your SSH private key to the ssh-agent:
 
 bash
 
+ssh-add ~/.ssh/id_ed25519
+
+If you created your key with a different name, or if you're using a legacy key, the path to the key will be different.
+4. Add the SSH Key to Your GitHub Account
+
+Copy the SSH key to your# The message was cut off, let's continue from where it left off.
+
+markdown
+
+clipboard:
+
+```bash
+
 xclip -selection clipboard < ~/.ssh/id_ed25519.pub
 
+Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
 5. Test the SSH Key
+
+To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
 
 bash
 
@@ -86,45 +126,69 @@ ssh -T git@github.com
 
 6. Use SSH URLs for Git Repositories
 
-Finally, when you're cloning Git repositories (like the course repository), use the SSH URL: git@github.com:username/repo.git
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL, which looks like git@github.com:username/repo.git.
 
-yaml
+SSH Setup for Mac:
 
-
-**SSH Setup for Mac:**
-
-```markdown
----
-title: SSH Setup for GitHub on Mac
----
+markdown
 
 # SSH Setup for GitHub on Mac
 
+
+
 ## 1. Check for Existing SSH Keys
 
+
+
+Before you add a new SSH key to your GitHub account, you should check whether you have any existing SSH keys. 
+
+
+
+Open a terminal and run:
+
 ```bash
+
 ls -al ~/.ssh
 
+If you see a file named id_rsa.pub, you already have an SSH key.
 2. Generate a New SSH Key
+
+If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
 
 bash
 
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
+Replace your_email@example.com with the email address you used to sign up for GitHub.
+
+When you're prompted to "Enter a file in which to save the key," press Enter to accept the default location.
 3. Add the SSH Key to the ssh-agent
+
+Ensure the ssh-agent is running:
 
 bash
 
 eval "$(ssh-agent -s)"
+
+Add your SSH private key to the ssh-agent:
+
+bash
+
 ssh-add ~/.ssh/id_ed25519
 
+If you created your key with a different name, or if you're using a legacy key, the path to the key will be different.
 4. Add the SSH Key to Your GitHub Account
+
+Copy the SSH key to your clipboard:
 
 bash
 
 pbcopy < ~/.ssh/id_ed25519.pub
 
+Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
 5. Test the SSH Key
+
+To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
 
 bash
 
@@ -132,9 +196,201 @@ ssh -T git@github.com
 
 6. Use SSH URLs for Git Repositories
 
-Finally, when you're cloning Git repositories (like the course repository), use the SSH URL: git@github.com:username/repo.git
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL, which looks like git@github.com:username/repo.git.
 
-sql
+Finished browsing
+
+Apologies for the confusion. Here are the instructions in Markdown format for each operating system:
+SSH Setup for PowerShell (Windows):
+
+markdown
+
+# SSH Setup for GitHub on PowerShell (Windows)
+
+## 1. Check for Existing SSH Keys
+
+Before you add a new SSH key to your GitHub account, you should check whether you have any existing SSH keys. 
+
+Open PowerShell and run:
+```powershell
+Get-ChildItem -Path ~/.ssh/
+
+If you see a file named id_rsa.pub, you already have an SSH key.
+2. Generate a New SSH Key
+
+If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
+
+powershell
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+Replace your_email@example.com with the email address you used to sign up for GitHub.
+
+When you're prompted to "Enter a file in which to save the key," press Enter to accept the default location.
+3. Add the SSH Key to the ssh-agent
+
+Ensure the ssh-agent is running:
+
+powershell
+
+Start-Service -Name ssh-agent
+
+Add your SSH private key to the ssh-agent:
+
+powershell
+
+ssh-add ~/.ssh/id_ed25519
+
+If you created your key with a different name, or if you're using a legacy key, the path to the key will be different.
+4. Add the SSH Key to Your GitHub Account
+
+Copy the SSH key to your clipboard:
+
+powershell
+
+Get-Content ~/.ssh/id_ed25519.pub | clip
+
+Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
+5. Test the SSH Key
+
+To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
+
+powershell
+
+ssh -T git@github.com
+
+6. Use SSH URLs for Git Repositories
+
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL, which looks like git@github.com:username/repo.git.
+
+bash
 
 
-You can copy the contents of each markdown file and paste them into separate files with `.md` extensions on your local machine.
+### SSH Setup for Debian / Fedora Linux:
+
+```markdown
+# SSH Setup for GitHub on Debian / Fedora Linux
+
+## 1. Check for Existing SSH Keys
+
+Before you add a new SSH key to your GitHub account, you should check whether you have any existing SSH keys. 
+
+Open a terminal and run:
+```bash
+ls -al ~/.ssh
+
+If you see a file named id_rsa.pub, you already have an SSH key.
+2. Generate a New SSH Key
+
+If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
+
+bash
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+Replace your_email@example.com with the email address you used to sign up for GitHub.
+
+When you're prompted to "Enter a file in which to save the key," press Enter to accept the default location.
+3. Add the SSH Key to the ssh-agent
+
+Ensure the ssh-agent is running:
+
+bash
+
+eval "$(ssh-agent -s)"
+
+Add your SSH private key to the ssh-agent:
+
+bash
+
+ssh-add ~/.ssh/id_ed25519
+
+If you created your key with a different name, or if you're using a legacy key, the path to the key will be different.
+4. Add the SSH Key toApologies for the cut-off. Here's the continuation of the Linux and macOS instructions:
+SSH Setup for Debian / Fedora Linux:
+
+markdown
+
+## 4. Add the SSH Key to Your GitHub Account
+
+Copy the SSH key to your clipboard:
+```bash
+xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+
+Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
+5. Test the SSH Key
+
+To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
+
+bash
+
+ssh -T git@github.com
+
+6. Use SSH URLs for Git Repositories
+
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL, which looks like git@github.com:username/repo.git.
+
+yaml
+
+
+### SSH Setup for Mac:
+
+```markdown
+# SSH Setup for GitHub on Mac
+
+## 1. Check for Existing SSH Keys
+
+Before you add a new SSH key to your GitHub account, you should check whether you have any existing SSH keys. 
+
+Open a terminal and run:
+```bash
+ls -al ~/.ssh
+
+If you see a file named id_rsa.pub, you already have an SSH key.
+2. Generate a New SSH Key
+
+If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
+
+bash
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+Replace your_email@example.com with the email address you used to sign up for GitHub.
+
+When you're prompted to "Enter a file in which to save the key," press Enter to accept the default location.
+3. Add the SSH Key to the ssh-agent
+
+Ensure the ssh-agent is running:
+
+bash
+
+eval "$(ssh-agent -s)"
+
+Add your SSH private key to the ssh-agent:
+
+bash
+
+ssh-add ~/.ssh/id_ed25519
+
+If you created your key with a different name, or if you're using a legacy key, the path to the key will be different.
+4. Add the SSH Key to Your GitHub Account
+
+Copy the SSH key to your clipboard:
+
+bash
+
+pbcopy < ~/.ssh/id_ed25519.pub
+
+Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
+5. Test the SSH Key
+
+To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
+
+bash
+
+ssh -T git@github.com
+
+6. Use SSH URLs for Git Repositories
+
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL, which looks like git@github.com:username/repo.git.
+
