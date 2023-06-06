@@ -1,6 +1,7 @@
 SSH Setup for Mac:  
 
 ```markdown
+
 # SSH Setup for GitHub on Mac
 
 ## 1. Check for Existing SSH Keys      
