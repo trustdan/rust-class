@@ -1,5 +1,3 @@
-markdown
-
 # SSH Setup for GitHub on Debian / Fedora Linux   
 
 ## 1. Check for Existing SSH Keys      
