@@ -56,7 +56,7 @@ Go to the GitHub website, navigate to your account settings, click on "SSH and G
 To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
 
 bash
-
+ 
  ssh -T git@github.com          
 
 6. Use SSH URLs for Git Repositories
