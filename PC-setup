@@ -1,0 +1,140 @@
+SSH Setup for PowerShell (Windows):
+
+markdown
+
+---
+title: SSH Setup for GitHub on PowerShell (Windows)
+---
+
+# SSH Setup for GitHub on PowerShell (Windows)
+
+## 1. Check for Existing SSH Keys
+
+```powershell
+Get-ChildItem -Path ~/.ssh/
+
+2. Generate a New SSH Key
+
+powershell
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+3. Add the SSH Key to the ssh-agent
+
+powershell
+
+Start-Service -Name ssh-agent
+ssh-add ~/.ssh/id_ed25519
+
+4. Add the SSH Key to Your GitHub Account
+
+powershell
+
+Get-Content ~/.ssh/id_ed25519.pub | clip
+
+5. Test the SSH Key
+
+powershell
+
+ssh -T git@github.com
+
+6. Use SSH URLs for Git Repositories
+
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL: git@github.com:username/repo.git
+
+yaml
+
+
+**SSH Setup for Debian / Fedora Linux:**
+
+```markdown
+---
+title: SSH Setup for GitHub on Debian / Fedora Linux
+---
+
+# SSH Setup for GitHub on Debian / Fedora Linux
+
+## 1. Check for Existing SSH Keys
+
+```bash
+ls -al ~/.ssh
+
+2. Generate a New SSH Key
+
+bash
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+3. Add the SSH Key to the ssh-agent
+
+bash
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+4. Add the SSH Key to Your GitHub Account
+
+bash
+
+xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+
+5. Test the SSH Key
+
+bash
+
+ssh -T git@github.com
+
+6. Use SSH URLs for Git Repositories
+
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL: git@github.com:username/repo.git
+
+yaml
+
+
+**SSH Setup for Mac:**
+
+```markdown
+---
+title: SSH Setup for GitHub on Mac
+---
+
+# SSH Setup for GitHub on Mac
+
+## 1. Check for Existing SSH Keys
+
+```bash
+ls -al ~/.ssh
+
+2. Generate a New SSH Key
+
+bash
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+3. Add the SSH Key to the ssh-agent
+
+bash
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+4. Add the SSH Key to Your GitHub Account
+
+bash
+
+pbcopy < ~/.ssh/id_ed25519.pub
+
+5. Test the SSH Key
+
+bash
+
+ssh -T git@github.com
+
+6. Use SSH URLs for Git Repositories
+
+Finally, when you're cloning Git repositories (like the course repository), use the SSH URL: git@github.com:username/repo.git
+
+sql
+
+
+You can copy the contents of each markdown file and paste them into separate files with `.md` extensions on your local machine.
