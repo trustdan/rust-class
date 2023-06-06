@@ -1,6 +1,6 @@
-subj: Rust with Rust
+# subj: Rust with Rust
 ```
-North Spark will be hosting coding class again! No experience necessary. 
+## North Spark will be hosting coding class again! No experience necessary. 
 ```
 Who: You!  You crazy rustaceans! 🦀
 ```
