@@ -12,6 +12,7 @@ Open PowerShell and run:
     Get-ChildItem -Path ~/.ssh/   
 
 If you see a file named id_rsa.pub, you already have an SSH key.
+
 2. Generate a New SSH Key
 
 If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
@@ -45,6 +46,7 @@ If you created your key with a different name, or if you're using a legacy key, 
 Copy the SSH key to your clipboard:
 
 powershell
+
 Get-Content ~/.ssh/id_ed25519.pub | clip
 
 Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
