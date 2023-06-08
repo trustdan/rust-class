@@ -1,5 +1,25 @@
-## Here are the steps to generate an SSH key and encrypt it with GPG on Windows using PowerShell:
-### Generate a large (8092 bit) RSA SSH key pair
+### enable ssh in Windows 10 / 11:
+Open the Settings app (Windows key + I)
+Go to Apps > Apps & features
+On the left, click "Optional features"
+Click "Add a feature" at the top of the page
+In the list of available optional features, find and select "OpenSSH Client (Beta)"
+Click "Install" to download and install the OpenSSH Client feature
+Once the installation completes, you should see "OpenSSH Client (Beta)" listed under "Installed features"
+Open PowerShell and run ssh -V to verify the OpenSSH client installed properly.
+You should see output like:
+
+```
+OpenSSH_for_Windows_8.1p1, LibreSSL 2.6.5
+```
+
+    You can now generate SSH keys and use the ssh command to connect to SSH servers from PowerShell and CMD.
+
+
+
+### Here are the steps to generate an SSH key and encrypt it with GPG on Windows using PowerShell:
+
+Generate a large (8092 bit) RSA SSH key pair
 
 ```
 ssh-keygen -m PEM -t rsa -b 8092
