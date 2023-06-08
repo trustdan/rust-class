@@ -63,7 +63,7 @@ This zips the SSH private and public key into the file keys.zip
 Encrypt the zip file with your GPG key
 
 ```
-sudo gpg -c -r your_email keys.zip
+sudo gpg -c -u your_email keys.zip
 ```
 
 This encrypts the keys.zip file using your GPG key
