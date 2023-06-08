@@ -142,4 +142,4 @@ O|===|* >________________>
 - https://github.com/mathall/rim 
 
 
-![alt text](https://github.com/trustdan/north/blob/main/Rust-Programming-w-Nor-Spark.png) 
+![alt text](https://github.com/trustdan/rust-class/blob/main/promo/Rust-Programming-w-Nor-Spark.png)
