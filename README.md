@@ -1,8 +1,6 @@
 ## Cast Title
 
-<asciinema-player src="north/how-to-vids/590468.cast" cols="80" rows="20" title="Cast Title" autoplay loop></asciinema-player>
-
-This cast demonstrates how to ...
+![Demo cast](https://github.com/trustdan/north/blob/main/how-to-vids/ssh-ing_github.gif)
 
 
 # subj: Rust with Rust
