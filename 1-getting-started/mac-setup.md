@@ -1,56 +1,95 @@
-# SSH Setup for GitHub on Mac   
+### Enable ssh in macOS:
 
-## 1. Check for Existing SSH Keys      
-
-Before you add a new SSH key to your GitHub account, you should check whether you have any existing SSH keys.      
-
-Open a terminal and run:   
-
-```bash
-ls -al ~/.ssh  
-
-If you see a file named id_rsa.pub, you already have an SSH key.
-2. Generate a New SSH Key
-
-If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
+## SSH is installed by default on macOS. You can verify it is enabled by opening Terminal and running:
 bash
 
-ssh-keygen -t ed25519 -C "your_email@example.com"         
+```
+ssh -V
+``` 
 
-Replace your_email@example.com with the email address you used to sign up for GitHub.
+You should see output like:
 
-When you're prompted to "Enter a file in which to save the key," press Enter to accept the default location. It's recommended you enter a strong passphrase.
-3. Add the SSH Key to the ssh-agent
+```
+OpenSSH_7.9p1, LibreSSL 2.7.3
+```
 
-Ensure the ssh-agent is running:
+This indicates the OpenSSH SSH client is installed and enabled.
+
+### Here are the steps to generate an SSH key and encrypt it with GPG on macOS:
+
+Generate a large (8092 bit) RSA SSH key pair
 bash
 
-eval "$(ssh-agent -s)"          
+```
+ssh-keygen -t rsa -b 8092
+```
 
-Add your SSH private key to the ssh-agent:
+This will generate an RSA SSH key pair with 8092 bit keys
+
+You will be prompted to enter a filename for the keys (press Enter for default id_rsa)
+And prompted to enter a passphrase for the private key (optional, but recommended)
+
+Export your GPG public key
 bash
 
-ssh-add ~/.ssh/id_ed25519          
+```
+gpg --export --armor your_email > public.key
+```
 
-If you created your key with a different name, or if you're using a legacy key, the path to the key will be different.
-4. Add the SSH Key to Your GitHub Account
+Replace your_email with the email address associated with your GPG key
 
-Copy the SSH key to your clipboard:
+This exports your public GPG key to the file public.key
+
+## Zip up the SSH keys
 bash
 
-pbcopy < ~/.ssh/id_ed25519.pub
+```
+zip keys.zip id_rsa id_rsa.pub 
+```
 
-Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
-5. Test the SSH Key
+This zips the SSH private and public key into the file keys.zip
 
-To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
+### Encrypt the zip file with your GPG key
 bash
 
-ssh -T git@github.com          
+```
+gpg -c -r your_email keys.zip  
+```
 
-6. Use SSH URLs for Git Repositories
+This encrypts the keys.zip file using your GPG key
+And generates an encrypted file named keys.zip.gpg
 
-Finally, when you're cloning Git repositories (like the course repository), use the SSH URL, which looks like git@github.com:username/repo.git.
+Remove the unencrypted zip file (optional)
+bash
 
-It's a good idea to backup your SSH keys in case you lose access to them.
-For more info on SSH keys, see GitHub's guide: https://help.github.com/en/articles/generating-an-ssh-key
+```
+rm keys.zip  
+```
+
+### To decrypt the keys on a new device:
+
+Export your GPG key from the original device using
+bash
+
+```
+gpg --export --armor your_email > key.gpg
+```
+
+### Install GPG Suite on the new device and import your key using
+bash
+
+```
+gpg --import key.gpg  
+```
+
+Decrypt the encrypted file using
+bash
+
+```
+gpg --output ssh_keys.zip --decrypt ssh_keys.zip.gpg  
+```
+
+This will output the ssh_keys.zip file containing your unencrypted SSH keys!
+
+You only need to export and import the specific GPG key used to encrypt the file. Not the entire GPG Suite setup.
+The keys can then be decrypted on a new device as long as that GPG key is installed.
