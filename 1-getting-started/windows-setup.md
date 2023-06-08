@@ -1,3 +1,8 @@
+### HOW-TO for getting your Windows terminal set up for communication with Github or Gitlab
+## If you delete / can't unencrypt your ssh keys ever, you should be able to just go back into Github or Gitlab in your browser and put a new key in there, since the old one isn't useful to you anymore (locked / lost).
+# When in doubt ask Claude+ / Poe Sage / ChatGPT.
+
+
 ### Enable ssh in Windows 10 / 11:
 Open the Settings app (Windows key + I)
 Go to Apps > Apps & features
@@ -27,6 +32,28 @@ This will generate an RSA SSH key pair with 8092 bit keys
 You will be prompted to enter a filename for the keys (press Enter for default id_rsa)
 And prompted to enter a passphrase for the private key (optional, but recommended)
 
+### Add the SSH key to the SSH agent:
+
+
+```
+ssh-add ~/.ssh/id_rsa
+```
+
+### Test your SSH connection to Github or Gitlab:
+bash
+
+```
+ssh -T git@github.com
+```
+
+### Generate a GPG key to encrypt your ssh key with.  Remember, you will need this GPG file later if you want to decrypt your SSH on a new device.
+
+``` 
+gpg --full-gen-key
+```
+
+\*Note: You must run this command in Git Bash, not PowerShell
+
 ### Export your GPG public key
 
 ```
@@ -40,6 +67,12 @@ This exports your public GPG key to the file public.key
 
 ```
 Compress-Archive -Path id_rsa,id_rsa.pub -DestinationPath keys.zip
+```
+
+or just 
+
+```
+zip keys.zip id_rsa id_rsa.pub
 ```
 
 This zips the SSH private and public key into the file keys.zip

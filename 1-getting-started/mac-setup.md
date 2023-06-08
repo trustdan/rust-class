@@ -1,3 +1,7 @@
+### HOW-TO for getting your Mac terminal set up for communication with Github or Gitlab
+## If you delete / can't unencrypt your ssh keys ever, you should be able to just go back into Github or Gitlab in your browser and put a new key in there, since the old one isn't useful to you anymore (locked / lost).
+# When in doubt ask Claude+ / Poe Sage / ChatGPT.
+
 ### Enable ssh in macOS:
 
 ## SSH is installed by default on macOS. You can verify it is enabled by opening Terminal and running:
@@ -29,7 +33,35 @@ This will generate an RSA SSH key pair with 8092 bit keys
 You will be prompted to enter a filename for the keys (press Enter for default id_rsa)
 And prompted to enter a passphrase for the private key (optional, but recommended)
 
-Export your GPG public key
+### Add the SSH key to the SSH agent:
+bash
+
+```
+ssh-add -K ~/.ssh/id_rsa 
+```
+
+### Add the SSH key to GitHub:
+(Follow the steps in the previous response)
+
+Test your SSH connection:
+bash
+
+```
+ssh -T git@github.com
+```
+
+You should see a success message.
+
+Your SSH key is now set up and ready to use with GitHub!
+
+
+### Generate a GPG key to encrypt your ssh key
+
+```
+gpg --full-gen-key
+```
+
+## Export your GPG public key
 bash
 
 ```
