@@ -2,8 +2,7 @@ Like everything else in this class, I had Claude+ on Poe provide these instructi
 
 # Here are the main steps for students to fetch assignments from your repo and submit pull requests:
 
-
-    The students will first need to clone your repo to their local machine. They can do this by running:
+The students will first need to clone your repo to their local machine. They can do this by running:
 
 
 ```
