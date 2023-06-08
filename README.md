@@ -1,3 +1,10 @@
+## Cast Title
+
+<asciinema-player src="/how-to-vids/590468.cast" cols="80" rows="20" title="Cast Title" autoplay loop></asciinema-player>
+
+This cast demonstrates how to ...
+
+
 # subj: Rust with Rust
 ```
 ## North Spark will be hosting coding class again! No experience necessary. 
