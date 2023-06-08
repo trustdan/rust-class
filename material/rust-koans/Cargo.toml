@@ -1,0 +1,5 @@
+[package]
+name = "koans"
+version = "0.2.2"
+authors = ["Mike MacDonald <crazymykl@gmail.com>"]
+build = "build.rs"

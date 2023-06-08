@@ -1,0 +1,15 @@
+Exercism exercises (get it...?)
+    - text: Exercism
+      url: https://exercism.org/tracks/rust
+
+Rust Programming Language Book with Quizes by Brown U.
+    - text: Rust-Book
+      url: https://rust-book.cs.brown.edu/ch01-01-installation.html
+
+Too many lists, an exercise in data
+    - text: Learn Rust with Entirely Too Many Linked Lists
+      url: https://rust-unofficial.github.io/too-many-lists/
+
+Random Rust quiz questions
+    - text: Rust Quiz #n
+      url: https://dtolnay.github.io/rust-quiz/
