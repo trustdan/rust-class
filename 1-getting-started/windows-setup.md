@@ -1,67 +1,64 @@
-SSH Setup for PowerShell (Windows):
-markdown
+## Here are the steps to generate an SSH key and encrypt it with GPG on Windows using PowerShell:
+### Generate a large (8092 bit) RSA SSH key pair
 
-# SSH Setup for GitHub on PowerShell (Windows)   
+```
+ssh-keygen -m PEM -t rsa -b 8092
+```
 
-## 1. Check for Existing SSH Keys     
+This will generate an RSA SSH key pair with 8092 bit keys
+You will be prompted to enter a filename for the keys (press Enter for default id_rsa)
+And prompted to enter a passphrase for the private key (optional, but recommended)
 
-Before you add a new SSH key to your GitHub account, you should check whether you have any existing SSH keys.     
+### Export your GPG public key
 
-Open PowerShell and run: 
-```powershell
-    Get-ChildItem -Path ~/.ssh/   
+```
+gpg --export --armor your_email > public.key
+```
 
-If you see a file named id_rsa.pub, you already have an SSH key.
+Replace your_email with the email address associated with your GPG key
+This exports your public GPG key to the file public.key
 
-2. Generate a New SSH Key
+### Zip up the SSH keys
 
-If you don't already have an SSH key (or you want to create a new one), you can generate one by running:
+```
+Compress-Archive -Path id_rsa,id_rsa.pub -DestinationPath keys.zip
+```
 
-powershell
+This zips the SSH private and public key into the file keys.zip
+Encrypt the zip file with your GPG key
 
-ssh-keygen -t ed25519 -C "your_email@example.com"   
+```
+gpg -c -r your_email keys.zip
+```
 
-Replace your_email@example.com with the email address you used to sign up for GitHub.
+This encrypts the keys.zip file using your GPG key
+And generates an encrypted file named keys.zip.gpg
 
-When you're prompted to "Enter a file in which to save the key," press Enter to accept the default location. It's recommended you enter a strong passphrase.
+### Remove the unencrypted zip file (optional)
 
-    Add the SSH Key to the ssh-agent
+```
+Remove-Item keys.zip
+```
 
-Ensure the ssh-agent is running:
+To decrypt the keys on a new device:
 
-powershell
+###  Export your GPG key from the original device
 
-Start-Service -Name ssh-agent   
+```
+gpg --export --armor your_email > key.gpg
+```
 
-Add your SSH private key to the ssh-agent:
+### Install GPG4Win on the new device and import your key
+```
+gpg --import key.gpg
+```
 
-powershell
+### Decrypt the encrypted file
+```
+gpg --output ssh_keys.zip --decrypt ssh_keys.zip.gpg
+```
 
-ssh-add ~/.ssh/id_ed25519   
+This will output the ssh_keys.zip file containing your unencrypted SSH keys!
 
-If you created your key with a different name, or if you're using a legacy key, the path to the key will be different.
-
-    Add the SSH Key to Your GitHub Account
-
-Copy the SSH key to your clipboard:
-
-powershell
-
-Get-Content ~/.ssh/id_ed25519.pub | clip
-
-Go to the GitHub website, navigate to your account settings, click on "SSH and GPG keys," and click on "New SSH key." Paste your SSH key into the field and click "Add SSH key."
-
-    Test the SSH Key
-
-To make sure everything is working, try to SSH to GitHub. You should see a message like "Hi username! You've successfully authenticated."
-
-powershell
-
-ssh -T git@github.com   
-
-6. Use SSH URLs for Git Repositories
-
-Finally, when you're cloning Git repositories (like the course repository), use the SSH URL, which looks like git@github.com:username/repo.git.
-
-It's a good idea to backup your SSH keys in case you lose access to them.
-For more info on SSH keys, see GitHub's guide: https://help.github.com/en/articles/generating-an-ssh-key
+You only need to export and import the specific GPG key used to encrypt the file. Not the entire GPG4Win setup.
+The keys can then be decrypted on a new device as long as that GPG key is installed.
