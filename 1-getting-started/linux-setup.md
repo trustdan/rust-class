@@ -30,6 +30,8 @@ You will be prompted to enter a filename for the keys (press Enter for default i
 
 And prompted to enter a passphrase for the private key (optional, but recommended)
 
+### using gnupg to encrypt your ssh files
+
 ```
 sudo apt install gnupg
 ```
