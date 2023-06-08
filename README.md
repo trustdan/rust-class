@@ -1,6 +1,6 @@
 ## Cast Title
 
-![Demo cast](https://github.com/trustdan/north/blob/main/how-to-vids/ssh-ing_github.gif)
+![Demo cast](how-to-vids/ssh-ing_github.gif)
 
 
 # subj: Rust with Rust
