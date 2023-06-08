@@ -13,6 +13,11 @@ ls -al ~/.ssh
 If you see a file named id_rsa.pub, you already have an SSH key.
 
 ### Generating an SSH key and encrypting it with GPG
+
+```
+apt -f install ssh -y
+``` 
+
 Generate a large (8092 bit) RSA SSH key pair
 
 ```
@@ -20,8 +25,14 @@ ssh-keygen -t rsa -b 8092
 ```
 
 This will generate an RSA SSH key pair with 8092 bit keys
+
 You will be prompted to enter a filename for the keys (press Enter for default id_rsa)
+
 And prompted to enter a passphrase for the private key (optional, but recommended)
+
+```
+sudo apt install gnupg
+```
 
 Export your GPG public key
 
