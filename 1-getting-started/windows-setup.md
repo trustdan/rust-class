@@ -1,6 +1,6 @@
-### HOW-TO for getting your Windows terminal set up for communication with Github or Gitlab
-## If you delete / can't unencrypt your ssh keys ever, you should be able to just go back into Github or Gitlab in your browser and put a new key in there, since the old one isn't useful to you anymore (locked / lost).
-# When in doubt ask Claude+ / Poe Sage / ChatGPT.
+# HOW-TO for getting your Windows terminal set up for communication with Github or Gitlab
+### If you delete / can't unencrypt your ssh keys ever, you should be able to just go back into Github or Gitlab in your browser and put a new key in there, since the old one isn't useful to you anymore (locked / lost).
+## When in doubt ask Claude+ / Poe Sage / ChatGPT.
 
 
 ### Enable ssh in Windows 10 / 11:
