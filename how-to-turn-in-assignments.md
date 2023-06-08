@@ -31,7 +31,7 @@ git push origin assignment-3
 
 ###    Finally, they can go to GitHub and open a new pull request from that branch on their fork into the parent repo.
 
-    You would then receive the pull request and can review the changes, merge them in to merge the submission, or just leave the PR open as an "assignment submission".
+You would then receive the pull request and can review the changes, merge them in to merge the submission, or just leave the PR open as an "assignment submission".
 
-    For the next assignment, students would just need to repeat the fetch, checkout, complete, and push steps to continue working through the assignments in the course.
+For the next assignment, students would just need to repeat the fetch, checkout, complete, and push steps to continue working through the assignments in the course.
 
