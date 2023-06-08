@@ -1,6 +1,6 @@
 ## Cast Title
 
-<asciinema-player src="/how-to-vids/590468.cast" cols="80" rows="20" title="Cast Title" autoplay loop></asciinema-player>
+<asciinema-player src="north/how-to-vids/590468.cast" cols="80" rows="20" title="Cast Title" autoplay loop></asciinema-player>
 
 This cast demonstrates how to ...
 
