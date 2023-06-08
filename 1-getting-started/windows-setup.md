@@ -1,4 +1,4 @@
-### enable ssh in Windows 10 / 11:
+### Enable ssh in Windows 10 / 11:
 Open the Settings app (Windows key + I)
 Go to Apps > Apps & features
 On the left, click "Optional features"
