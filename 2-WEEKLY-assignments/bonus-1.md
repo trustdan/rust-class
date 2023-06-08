@@ -1,6 +1,6 @@
-Like everything else in this class, I had Claude+ on Poe provide these instructions for handling class assignments from here on out: 
+## Like everything else in this class, I had Claude+ on Poe provide these instructions for handling class assignments from here on out: 
 
-# Here are the main steps for students to fetch assignments from your repo and submit pull requests:
+# Here are the steps to practicing pulling your weekly assignments using Git
 
 
     The students will first need to clone your repo to their local machine. They can do this by running:
