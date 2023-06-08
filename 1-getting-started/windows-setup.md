@@ -13,9 +13,7 @@ You should see output like:
 OpenSSH_for_Windows_8.1p1, LibreSSL 2.6.5
 ```
 
-    You can now generate SSH keys and use the ssh command to connect to SSH servers from PowerShell and CMD.
-
-
+You can now generate SSH keys and use the ssh command to connect to SSH servers from PowerShell and CMD.
 
 ### Here are the steps to generate an SSH key and encrypt it with GPG on Windows using PowerShell:
 
