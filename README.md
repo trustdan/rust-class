@@ -7,9 +7,10 @@ Who: You!  You crazy rustaceans! 🦀
 ```
 What: The Rust language (rust lang).
 ```
-Where:  North Spark Defense Lab, 641 Alert Ave, Grand Forks AFB, ND 58205.
+Where:  VIRTUALLY (change) but feel free to come by and chat with us, ask your questions, etc.  Slack or Github work great too. 
+~~~North Spark Defense Lab, 641 Alert Ave, Grand Forks AFB, ND 58205.~~~
 ```
-When: Wednesdays at 1500L, starting 31 MAY after Memorial Day.
+When: VIRTUALLY (change) but feel free to come by and chat with us, ask your questions, etc.  Slack or Github work great too.
 ```
 Why?  It's the most popular programming language for years running.  It "just works" and is secure. A programming unicorn, Rust is both a systems-level and high-level language.  It is great for data science and it plays nice with Python (see "Polars"). 
 ```
