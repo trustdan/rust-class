@@ -8,6 +8,7 @@ Who: You!  You crazy rustaceans! 🦀
 What: The Rust language (rust lang).
 
 Where:  VIRTUALLY (change) but feel free to come by and chat with us, ask your questions, etc.  Slack or Github work great too. 
+
 Old:  North Spark Defense Lab, 641 Alert Ave, Grand Forks AFB, ND 58205.
 
 When: VIRTUALLY (change) but feel free to come by and chat with us, ask your questions, etc.  Slack or Github work great too.
