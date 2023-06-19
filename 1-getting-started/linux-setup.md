@@ -97,8 +97,15 @@ Decrypt the encrypted file using
 sudo gpg --output ssh_keys.zip --decrypt ssh_keys.zip.gpg
 ```
 
-This will output the ssh_keys.zip file containing your unencrypted SSH keys!
+This will output the ssh_keys.zip file containing your unencrypted SSH keys
 
 You only need to export and import the specific GPG key used to encrypt the file. Not the entire GnuPG setup
 The keys can then be decrypted on a new device as long as that GPG key is installed.
 
+TO IMPORT YOUR KEYS
+
+eval "$(ssh-agent)"   
+        #### (to start up the agent)
+ssh-add ~/.ssh/id_ed25519 
+        #### (or id_rsa, whatever you created)
+ssh-add -l
