@@ -32,6 +32,10 @@ This will generate an RSA SSH key pair with 8092 bit keys
 You will be prompted to enter a filename for the keys (press Enter for default id_rsa)
 And prompted to enter a passphrase for the private key (optional, but recommended)
 
+// break break // see instructions here for starting up the ssh agent.  It won't be listening to add your key if it's not started (sigh).
+https://stackoverflow.com/questions/18683092/how-to-run-ssh-add-on-windows
+There's a nice detailed answer there in the middle. 
+
 ### Add the SSH key to the SSH agent:
 
 
