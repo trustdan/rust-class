@@ -118,3 +118,10 @@ This will output the ssh_keys.zip file containing your unencrypted SSH keys!
 
 You only need to export and import the specific GPG key used to encrypt the file. Not the entire GPG4Win setup.
 The keys can then be decrypted on a new device as long as that GPG key is installed.
+
+You can also use WSL and gnupg.  Once you have id_rsa in your C:\users\your_username\.ssh you can open a powershell there and just hit a 
+```
+start-ssh-agent
+```
+
+and it seems to auto load it.
